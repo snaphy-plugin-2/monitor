@@ -6,6 +6,7 @@
   "author": "Robins Gupta",
   "authorEmail": "robins@snaphy.com",
   "dependencies": {
+    "pmx": "^1.5.6"
   },
   "optionalDependencies": {},
   "repository": {
