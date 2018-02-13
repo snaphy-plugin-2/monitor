@@ -1,0 +1,7 @@
+{
+  "name": "monitor",
+  "description": "A plugin for improving backend security",
+  "routeExposure": "/monitor",
+  "activate": true,
+  "pluginDependencies": {}
+}

@@ -1,0 +1,18 @@
+{
+  "name": "monitor",
+  "version": "2.0.0",
+  "main": "backend",
+  "description": "A plugin for improving backend security",
+  "author": "Robins Gupta",
+  "authorEmail": "robins@snaphy.com",
+  "dependencies": {
+  },
+  "optionalDependencies": {},
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "devDependencies": {
+
+  }
+}

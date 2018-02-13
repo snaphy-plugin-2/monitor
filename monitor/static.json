@@ -1,0 +1,19 @@
+{
+  "css": {
+    "/monitor/style/monitor.css": "monitorCss"
+  },
+  "js": {
+    "/monitor/scripts/routes/monitor.js": "monitorRoute",
+    "/monitor/scripts/controllers/monitor.js": "monitorController"
+  },
+  "moduleDependencies":{
+
+  },
+  "settings": ["/monitor/admin-panel-setting.js"],
+  "bodystructure": {
+    "asidebarHook": [],
+    "sidebarHook": [],
+    "headerHook": [],
+    "footerHook":[]
+  }
+}
