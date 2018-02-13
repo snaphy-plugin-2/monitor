@@ -2,7 +2,7 @@
 module.exports = function( server, databaseObj, helper, packageObj) {
 	
 	const pmx = require('pmx');
-	
+	var counter = 0;
 	/**
 	 * Here server is the main app object
 	 * databaseObj is the mapped database from the package.json file
@@ -18,7 +18,22 @@ module.exports = function( server, databaseObj, helper, packageObj) {
 	 */
 	var init = function(){
 		pm2_monit();
+		//http://docs.keymetrics.io/docs/pages/custom-metrics/
+		var probe = pmx.probe();
+
+		var metric = probe.metric({
+		name    : 'Realtime user',
+		value   : function() {
+			return counter;
+		}
+		});
+		//Testing Loop delay
+		setInterval(function() {
+			counter++;
+		}, 100);
 	};
+
+
 
 
 
