@@ -3,5 +3,8 @@
   "description": "A plugin for improving backend security",
   "routeExposure": "/monitor",
   "activate": true,
-  "pluginDependencies": {}
+  "pluginDependencies": {},
+  "monitor":{
+    "name": "DanzFoods"
+  }
 }

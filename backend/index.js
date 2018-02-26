@@ -22,10 +22,10 @@ module.exports = function( server, databaseObj, helper, packageObj) {
 		var probe = pmx.probe();
 
 		var metric = probe.metric({
-		name    : 'Realtime user',
-		value   : function() {
-			return counter;
-		}
+			name    : packageObj.monitor.name,
+			value   : function() {
+				return counter;
+			}
 		});
 		//Testing Loop delay
 		setInterval(function() {
@@ -52,5 +52,5 @@ module.exports = function( server, databaseObj, helper, packageObj) {
 	//return all the methods that you wish to provide user to extend this plugin.
 	return {
 		init: init
-	}
+	};
 }; //module.exports
