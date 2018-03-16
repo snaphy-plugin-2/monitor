@@ -33,13 +33,13 @@ module.exports = function( server, databaseObj, helper, packageObj) {
 		}, 100);
 
 
-		process.on('SIGINT', function() {
+		/* process.on('SIGINT', function() {
 			const mongoConnector = server.dataSources.mongodb.connector;
 			mongoConnector.connection.close(function () {
 				console.log('MongoDb disconnected on app termination');
 				process.exit(0);
 			});
-		 });
+		 }); */
 	};
 
 
