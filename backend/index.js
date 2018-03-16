@@ -31,6 +31,17 @@ module.exports = function( server, databaseObj, helper, packageObj) {
 		setInterval(function() {
 			counter++;
 		}, 100);
+
+
+		process.on('SIGINT', function() {
+			const mongoConnector = server.dataSources.mongodb.connector;
+			mongoConnector.connection.close(function () {
+				console.log('MongoDb disconnected on app termination');
+				process.exit(err ? 1 : 0);
+			});
+		 });
+
+		 throw "Testing Restart";
 	};
 
 
