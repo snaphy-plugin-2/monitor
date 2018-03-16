@@ -37,11 +37,9 @@ module.exports = function( server, databaseObj, helper, packageObj) {
 			const mongoConnector = server.dataSources.mongodb.connector;
 			mongoConnector.connection.close(function () {
 				console.log('MongoDb disconnected on app termination');
-				process.exit(err ? 1 : 0);
+				process.exit(0);
 			});
 		 });
-
-		 throw "Testing Restart";
 	};
 
 
